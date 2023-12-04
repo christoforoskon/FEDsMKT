@@ -1,0 +1,107 @@
+.coinCard {
+  border-radius: 0.81694rem;
+  border: 0.871px solid rgba(167, 167, 167, 0.2);
+  background: rgba(140, 140, 140, 0.1);
+  position: relative;
+  padding: 0.75rem 1rem 1.06rem 1rem;
+
+  max-width: 14.75rem;
+}
+
+.coinInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.69rem;
+  margin-bottom: 1.06rem;
+}
+
+.coinInfo > img {
+  max-width: 1.9515rem;
+}
+
+.coinBg {
+  width: 2.125rem;
+  height: 2.125rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coinCard h3 {
+  color: #fff;
+  text-shadow: 0px 0px 65.81953430175781px #ffc255;
+  font-family: Roboto;
+  font-size: 0.83469rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 1.00163rem */
+}
+
+.coinCard h4 {
+  color: #ffa3a6;
+  text-shadow: 0px 0px 60.124969482421875px #ffc255;
+  font-family: Roboto;
+  font-size: 0.76244rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 0.91494rem */
+}
+
+.coinCard .name {
+  border-radius: 0.21788rem;
+  background: #fff8d6;
+  display: flex;
+  align-items: center;
+}
+
+.coinCard .name span {
+  color: #000;
+  text-shadow: 0px 0px 60.124969482421875px #ffc255;
+  font-family: Roboto;
+  font-size: 0.49013rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 0.58819rem */
+  padding: 0.13rem 0.44rem;
+  text-transform: uppercase;
+}
+
+.divider {
+  opacity: 0.15;
+  background: #fff;
+
+  width: 100%;
+  height: 0.0625rem;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+.coinCard h2 {
+  margin-top: 0.88rem;
+  color: #fff;
+  text-shadow: 0px 0px 60.124969482421875px #ffc255;
+  font-family: Roboto;
+  font-size: 1.08925rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 1.30706rem */
+  margin-bottom: 0.5rem;
+}
+
+.coinCard .positive {
+  color: #b1ffc2;
+  display: flex;
+  gap: 0.25rem;
+}
+.coinCard .negative {
+  color: #ffa3a6;
+  display: flex;
+  gap: 0.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .coinCard {
+    max-width: 13.07063rem;
+  }
+}

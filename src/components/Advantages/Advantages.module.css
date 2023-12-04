@@ -1,0 +1,137 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+}
+
+.advantages h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.6875rem; /* 134.375% */
+  max-width: 10.375rem;
+}
+
+.advantages > h1 span {
+}
+
+.dividerGreen {
+  background: #29a643;
+  width: 4.375rem;
+  margin: 1.56rem 0;
+}
+
+.advantages > h3 {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem; /* 142.857% */
+  max-width: 17.5rem;
+}
+
+.advantages > h3 span {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+
+.advantageCardGrid {
+  margin: 3.75rem 0;
+
+  gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2.06rem;
+
+  width: 85%;
+}
+
+@media only screen and (min-width: 768px) {
+  .advantages > h1 {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.66375rem; /* 121.772% */
+    max-width: 100%;
+  }
+
+  .advantages > h1 span {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.66375rem;
+  }
+
+  .advantages > h3 {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.375rem; /* 157.143% */
+    max-width: 40.0625rem;
+  }
+
+  .advantages > h3 span {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.375rem;
+  }
+
+  .advantageCardGrid {
+    grid-template-rows: 1fr;
+    justify-content: center;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .advantageCardGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+  }
+
+  .advantageCardGrid > :first-child {
+    grid-row: span 2;
+  }
+
+  .advantageCardGrid > :first-child > img {
+    position: absolute;
+    max-width: 100%;
+    width: 6.25rem;
+    height: 13.25756rem;
+    top: auto;
+    left: 1.15rem;
+    bottom: 1.15rem;
+  }
+  .advantageCardGrid > :nth-child(2) {
+    max-width: 100% !important;
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .advantageCardGrid > :nth-child(3),
+  .advantageCardGrid > :nth-child(4) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}

@@ -1,0 +1,21 @@
+@import "react-datepicker/dist/react-datepicker.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#root {
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+.slick-prev,
+.slick-next {
+  color: #959595 !important;
+}
+
+.slick-slide {
+  max-width: 100%;
+}

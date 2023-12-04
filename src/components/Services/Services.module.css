@@ -1,0 +1,173 @@
+.services {
+  padding: 3.75rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services .divider {
+  background: #d51820;
+  width: 2.5rem;
+  height: 0.25rem;
+}
+
+.services > h1 {
+  color: #444;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 3.01656rem; /* 137.899% */
+  letter-spacing: -0.04375rem;
+}
+
+.services .dot {
+  color: #d51820;
+  font-family: Roboto;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 3.01656rem;
+  letter-spacing: -0.04375rem;
+}
+
+.services h3 {
+  color: #444;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3125rem; /* 150% */
+  max-width: 17.4375rem;
+}
+
+.services h3 .bold {
+  color: #444;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3125rem;
+}
+.servicesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  justify-content: center;
+  gap: 2.06rem;
+  width: 85%;
+  padding: 1.56rem 0;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.94rem 0;
+}
+
+.service img {
+  width: 2.89875rem;
+  height: 3.32294rem;
+  margin-bottom: 1.15rem;
+}
+
+.service h2 {
+  margin-bottom: 1rem;
+}
+
+.service p {
+  text-align: center;
+  max-width: 15.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .service:nth-child(1) {
+    grid-column: span 2;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .services {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .servicesGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .service:nth-child(1) {
+    grid-row: span 2;
+    grid-column: span 1;
+  }
+
+  .service:nth-child(2),
+  .service:nth-child(3) {
+    grid-column: span 1;
+  }
+
+  .service {
+    align-items: flex-start;
+  }
+
+  .service hr {
+    margin: 0 0 2.5rem 0;
+  }
+
+  .service:first-child h1 {
+    color: #444;
+    font-family: Roboto;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 5.625rem; /* 112.5% */
+    letter-spacing: -0.1rem;
+    max-width: 17.6875rem;
+    margin-bottom: 3.44rem;
+  }
+  .service:first-child h1 > span {
+    color: #d51820;
+    font-family: Roboto;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 5.625rem;
+    letter-spacing: -0.1rem;
+  }
+  .service:first-child h3 {
+    color: #444;
+    font-family: Roboto;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.49244rem; /* 140.465% */
+    text-align: left;
+    max-width: 13.0625rem;
+  }
+  .service:first-child h3 > span {
+    color: #444;
+    font-family: Roboto;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.49244rem;
+  }
+
+  .service > p {
+    text-align: left;
+    color: #444;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.31081rem; /* 149.805% */
+  }
+}

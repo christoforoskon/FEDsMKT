@@ -1,0 +1,25 @@
+.coinCardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.06rem;
+  width: 85%;
+  margin: 0 auto;
+  padding: 1.56rem 0 3.56rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .coinCardGrid {
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .coinCardGrid {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

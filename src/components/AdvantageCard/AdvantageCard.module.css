@@ -1,0 +1,63 @@
+.advantageCard {
+  border-radius: 0.625rem;
+  background: #0b0819;
+  backdrop-filter: blur(45px);
+  max-width: 17.5rem;
+  padding: 2.69rem 1.87rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.advantageCard h2 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5625rem; /* 125% */
+  max-width: 8.5625rem;
+}
+
+.advantageCard hr {
+  background: #29a643;
+  width: 3.125rem;
+  height: 0.125rem;
+  margin: 1.25rem 0;
+}
+
+.advantageCard h3 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem; /* 142.857% */
+  text-align: start;
+  max-width: 11.875rem;
+}
+.advantageCard h3 span {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem; /* 142.857% */
+}
+
+.advantageCard img {
+  position: absolute;
+  max-width: 3.74306rem;
+  right: 1.15rem;
+  top: 1.15rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .advantageCard {
+    /* max-width: 33.125rem; */
+    /* width: 20.5rem; */
+    /* max-width: 42.25rem; */
+    max-width: 20.5rem;
+  }
+}
